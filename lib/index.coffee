@@ -7,7 +7,7 @@ path = require("path")
 #postgres://:@localhost:5432/yee
 sequelize = new Sequelize('yee','xcmy','123456',{
   host: 'localhost',
-  dialect: 'mysql'|'sqlite'|'postgres'|'mssql',
+  dialect:'postgres',
   operatorsAliases: false,
   logging:false,
   pool: {
