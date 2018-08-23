@@ -3,8 +3,20 @@ Config = require("../config")
 fs = require("fs")
 path = require("path")
 
-sequelize = new Sequelize(Config.dbUrl,{logging:false})
-
+#sequelize = new Sequelize(Config.dbUrl,{logging:false})
+#postgres://:@localhost:5432/yee
+sequelize = new Sequelize('yee','xcmy','123456',{
+  host: 'localhost',
+  dialect: 'mysql'|'sqlite'|'postgres'|'mssql',
+  operatorsAliases: false,
+  logging:false,
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
+  },
+})
 
 sequelize.authenticate()
   .then ()->
