@@ -9,7 +9,7 @@ sequelize = new Sequelize('yee','xcmy','123456',{
   host: 'localhost',
   dialect:'postgres',
   operatorsAliases: false,
-  logging:false,
+  logging:true,
   pool: {
     max: 5,
     min: 0,
