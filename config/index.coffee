@@ -1,7 +1,7 @@
 module.exports =
   port:3002
   init:true
-  dbUrl:'postgres://xcmy:liuyang123@localhost:5432/yee'
+  dbUrl:'postgres://xcmy:123456@localhost:5432/yee'
   customMethodPrefix:
     get:'__get'
     list:'__list'
