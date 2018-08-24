@@ -8,7 +8,7 @@ path = require("path")
 sequelize = new Sequelize('yee','xcmy','liuyang123',{
   dialect:'postgres',
   operatorsAliases: false,
-  logging:true,
+  logging:false,
   pool: {
     max: 5,
     min: 0,

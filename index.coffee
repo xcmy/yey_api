@@ -10,8 +10,7 @@ app.use bodyParser()
 #跨域
 app.use(cors())
 
-router = new Router()
-router.prefix '/api/yee'
+router = new Router({prefix:'/api/yee'})
 api = require('./router')
 router.use  api.routes(), api.allowedMethods()
 app.use router.routes()
