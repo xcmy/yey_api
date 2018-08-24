@@ -5,8 +5,7 @@ path = require("path")
 
 #sequelize = new Sequelize(Config.dbUrl,{logging:false})
 #postgres://:@localhost:5432/yee
-sequelize = new Sequelize('template0','postgres','liuyang123',{
-  host: 'localhost',
+sequelize = new Sequelize('yee','xcmy','liuyang123',{
   dialect:'postgres',
   operatorsAliases: false,
   logging:true,
@@ -17,6 +16,7 @@ sequelize = new Sequelize('template0','postgres','liuyang123',{
     idle: 10000
   },
 })
+
 
 sequelize.authenticate()
   .then ()->
